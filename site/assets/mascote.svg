@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 540" role="img" aria-label="Belito, mascote da Belo Banho Aquecedores">
+<title>Belito — mascote da Belo Banho Aquecedores</title>
+<defs>
+  <linearGradient id="mBody" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#C9D6E8"/><stop offset=".18" stop-color="#FFFFFF"/>
+    <stop offset=".62" stop-color="#F4F7FC"/><stop offset="1" stop-color="#B9C8DE"/>
+  </linearGradient>
+  <linearGradient id="mCap" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#0B1B33"/><stop offset=".3" stop-color="#1D4A8F"/>
+    <stop offset=".7" stop-color="#16386B"/><stop offset="1" stop-color="#0B1B33"/>
+  </linearGradient>
+  <linearGradient id="mRed" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#8E1024"/><stop offset=".32" stop-color="#E01B3D"/>
+    <stop offset=".72" stop-color="#C4162E"/><stop offset="1" stop-color="#8E1024"/>
+  </linearGradient>
+  <linearGradient id="mLimb" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#CFDAE9"/>
+  </linearGradient>
+  <linearGradient id="mPipe" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#E8EEF7"/><stop offset=".5" stop-color="#9AAABF"/>
+    <stop offset="1" stop-color="#6C7C93"/>
+  </linearGradient>
+  <radialGradient id="mShade" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#0B1B33" stop-opacity=".22"/>
+    <stop offset="1" stop-color="#0B1B33" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<!-- sombra no chão -->
+<ellipse cx="200" cy="508" rx="118" ry="24" fill="url(#mShade)"/>
+
+<!-- pernas -->
+<rect x="152" y="392" width="26" height="72" rx="13" fill="url(#mLimb)"/>
+<rect x="222" y="392" width="26" height="72" rx="13" fill="url(#mLimb)"/>
+<!-- sapatos -->
+<path d="M132 470c0-16 13-26 33-26h22c9 0 15 6 15 15v14c0 9-6 15-15 15h-40c-9 0-15-6-15-15z" fill="url(#mRed)"/>
+<path d="M198 470c0-16 13-26 33-26h22c9 0 15 6 15 15v14c0 9-6 15-15 15h-40c-9 0-15-6-15-15z" fill="url(#mRed)"/>
+<ellipse cx="167" cy="486" rx="35" ry="7" fill="#7A0C1E" opacity=".35"/>
+<ellipse cx="233" cy="486" rx="35" ry="7" fill="#7A0C1E" opacity=".35"/>
+
+<!-- braço direito (do observador) apontando -->
+<path d="M296 244c22 6 42 22 50 44 5 14 3 26-4 33" stroke="url(#mLimb)" stroke-width="26" stroke-linecap="round" fill="none"/>
+<circle cx="340" cy="326" r="25" fill="url(#mLimb)"/>
+<path d="M352 318c10-3 18-1 20 4s-5 11-15 13" fill="url(#mLimb)"/>
+
+<!-- corpo: cilindro -->
+<path d="M100 176h200v186a100 26 0 0 1-200 0z" fill="url(#mBody)"/>
+<ellipse cx="200" cy="176" rx="100" ry="26" fill="#EEF3FA"/>
+
+<!-- faixa/base vermelha -->
+<path d="M101 344h198v18a100 26 0 0 1-198 0z" fill="url(#mRed)"/>
+<ellipse cx="200" cy="344" rx="99" ry="25" fill="#E8365A" opacity=".55"/>
+
+<!-- tampa azul -->
+<path d="M112 128h176v34a88 22 0 0 1-176 0z" fill="url(#mCap)"/>
+<ellipse cx="200" cy="128" rx="88" ry="22" fill="#22539E"/>
+<ellipse cx="200" cy="122" rx="52" ry="14" fill="#16386B"/>
+<ellipse cx="200" cy="114" rx="52" ry="14" fill="#1D4A8F"/>
+
+<!-- cano lateral -->
+<rect x="296" y="196" width="74" height="26" rx="13" fill="url(#mPipe)"/>
+<ellipse cx="366" cy="209" rx="7" ry="13" fill="#5A6A80"/>
+<ellipse cx="366" cy="209" rx="4" ry="8" fill="#3D4757"/>
+
+<!-- braço esquerdo acenando -->
+<path d="M104 236c-18-6-36-20-44-40" stroke="url(#mLimb)" stroke-width="26" stroke-linecap="round" fill="none"/>
+<g transform="translate(56 176) rotate(-16)">
+  <circle cx="0" cy="0" r="27" fill="url(#mLimb)"/>
+  <rect x="-24" y="-46" width="13" height="34" rx="6.5" fill="url(#mLimb)"/>
+  <rect x="-8"  y="-53" width="13" height="40" rx="6.5" fill="url(#mLimb)"/>
+  <rect x="8"   y="-48" width="13" height="35" rx="6.5" fill="url(#mLimb)"/>
+  <rect x="23"  y="-38" width="13" height="27" rx="6.5" fill="url(#mLimb)"/>
+</g>
+
+<!-- rosto -->
+<ellipse cx="200" cy="252" rx="86" ry="66" fill="#fff" opacity=".55"/>
+<!-- sobrancelhas -->
+<path d="M148 212c8-9 22-11 32-5" stroke="#1E2733" stroke-width="9" stroke-linecap="round" fill="none"/>
+<path d="M220 207c10-6 24-4 32 5" stroke="#1E2733" stroke-width="9" stroke-linecap="round" fill="none"/>
+<!-- olhos -->
+<ellipse cx="167" cy="243" rx="21" ry="25" fill="#fff"/>
+<ellipse cx="233" cy="243" rx="21" ry="25" fill="#fff"/>
+<circle cx="170" cy="246" r="12.5" fill="#20293A"/>
+<circle cx="230" cy="246" r="12.5" fill="#20293A"/>
+<circle cx="175" cy="240" r="4.5" fill="#fff"/>
+<circle cx="235" cy="240" r="4.5" fill="#fff"/>
+<!-- nariz -->
+<ellipse cx="200" cy="270" rx="15" ry="13" fill="#EDF2F9"/>
+<ellipse cx="197" cy="267" rx="6" ry="5" fill="#fff" opacity=".9"/>
+<!-- bochechas -->
+<ellipse cx="145" cy="272" rx="17" ry="11" fill="#F2A6AE" opacity=".75"/>
+<ellipse cx="255" cy="272" rx="17" ry="11" fill="#F2A6AE" opacity=".75"/>
+<!-- sorriso -->
+<path d="M162 285c10 22 28 33 38 33s28-11 38-33z" fill="#8E1024"/>
+<path d="M166 287c9 6 21 9 34 9s25-3 34-9z" fill="#fff"/>
+<path d="M176 312c7 4 16 6 24 6s17-2 24-6c-7-6-15-9-24-9s-17 3-24 9z" fill="#E0566F"/>
+
+<!-- logo no corpo -->
+<text x="200" y="392" text-anchor="middle" font-family="Sora,Inter,sans-serif" font-size="30" font-weight="800" fill="#C4162E" letter-spacing="-.5">Belo</text>
+<text x="200" y="422" text-anchor="middle" font-family="Sora,Inter,sans-serif" font-size="30" font-weight="800" fill="#16386B" letter-spacing="-.5">Banho</text>
+<path d="M268 380c9 10 14 19 14 27 0 9-7 16-16 16s-16-7-16-16c0-8 6-17 18-27z" fill="#C4162E"/>
+<path d="M262 396c5 6 8 11 8 16 0 5-4 9-9 9" stroke="#16386B" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>
