@@ -65,6 +65,7 @@ p{max-width:70ch}
 .hdr.is-stuck{box-shadow:var(--sh-md)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:11px 0}
 .logo{display:flex;align-items:center;gap:10px;flex:none}
+.logo__img{height:44px;width:auto;display:block}
 .logo__mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(140deg,var(--blue-700),var(--blue-600));display:grid;place-items:center;flex:none;box-shadow:0 4px 14px rgba(22,56,107,.26)}
 .logo__mark svg{width:23px;height:23px}
 .logo__txt{display:flex;flex-direction:column;line-height:1.1}
@@ -201,6 +202,17 @@ p{max-width:70ch}
 .checks b{display:block;font-family:var(--font-display);font-size:var(--fs-sm);font-weight:600;color:#fff;margin-bottom:2px}
 .checks span{font-size:var(--fs-xs);color:rgba(255,255,255,.6);line-height:1.5}
 .safety__note{margin-top:20px;padding:17px 19px;border-left:3px solid var(--red-500);background:rgba(255,255,255,.05);border-radius:0 var(--r-sm) var(--r-sm) 0;font-size:var(--fs-sm);color:rgba(255,255,255,.88)}
+.safety__mascot{position:absolute;right:4px;bottom:-12px;width:clamp(110px,15%,180px);z-index:1;opacity:.96;pointer-events:none;display:none}
+@media(min-width:900px){.safety__mascot{display:block}}
+
+.faq__head{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.faq__head>div{flex:1;min-width:240px}
+.faq__mascot{width:clamp(96px,13vw,132px);flex:none;display:none}
+@media(min-width:700px){.faq__mascot{display:block}}
+
+.cta__text{position:relative}
+.cta__mascot{position:absolute;right:-34px;bottom:-16px;width:clamp(90px,11vw,140px);z-index:1;opacity:.96;pointer-events:none;display:none}
+@media(min-width:1024px){.cta__mascot{display:block}}
 
 .testi{display:grid;gap:17px;margin-top:38px;grid-template-columns:repeat(auto-fit,minmax(min(100%,285px),1fr))}
 .testi__card{background:#fff;border:1px solid var(--gray-200);border-radius:var(--r-md);padding:25px 22px;display:flex;flex-direction:column;gap:13px;transition:transform .24s var(--ease),box-shadow .24s var(--ease)}
