@@ -100,25 +100,32 @@ p{max-width:70ch}
 .badge svg{width:15px;height:15px;color:var(--red-500)}
 .hero h1{font-size:var(--fs-display);font-weight:800;color:#fff;letter-spacing:-.035em;margin-bottom:16px;line-height:1.06;max-width:13ch}
 .hero h1 em{font-style:normal;color:var(--red-500)}
+@media(max-width:559px){
+  .badge{display:flex;width:fit-content;margin-inline:auto}
+  .hero h1{text-align:center;margin-inline:auto}
+}
 .hero__lead{color:rgba(255,255,255,.78);font-size:var(--fs-lead);margin-bottom:22px;max-width:46ch}
 .hero__list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 18px;margin-bottom:26px;max-width:430px}
 .hero__list li{display:flex;align-items:center;gap:9px;font-size:var(--fs-sm);color:rgba(255,255,255,.92);font-weight:500}
 .hero__list svg{width:17px;height:17px;color:var(--success);flex:none}
 .hero__cta{display:flex;gap:12px;flex-wrap:wrap}
 .hero__cta .btn{flex:1 1 auto;min-width:206px}
-.hero__right{position:relative;display:grid;gap:16px}
+.hero__right{position:relative;display:grid;gap:16px;min-width:0}
 @media(min-width:560px){.hero__right{grid-template-columns:1.3fr .7fr;align-items:stretch}}
-.hero__photo{position:relative;min-height:320px;display:flex;flex-direction:column;align-items:flex-end;justify-content:flex-end;gap:10px;padding-right:4px}
+.hero__photo{position:relative;min-height:340px}
 .hero__photo>img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;border-radius:inherit}
 .photo-slot{display:grid;place-items:center;gap:9px;text-align:center;padding:22px;color:rgba(255,255,255,.45);font-size:.72rem;line-height:1.45}
 .photo-slot svg{width:46px;height:46px;opacity:.5}
 .mascot{position:absolute;right:-10px;bottom:-6px;width:clamp(160px,42%,260px);z-index:3;filter:drop-shadow(0 14px 26px rgba(0,0,0,.4))}
-.hero__photo>img.mascot{position:relative;width:clamp(160px,42%,260px);height:auto;aspect-ratio:700/754;object-fit:contain;margin:0 -6px -4px 0;z-index:3;filter:drop-shadow(0 14px 26px rgba(0,0,0,.4))}
-@media(max-width:559px){.hero__photo>img.mascot{width:clamp(210px,58%,260px)}}
-@media(min-width:560px){.hero__photo{justify-content:center;align-items:center;padding-right:0}.hero__photo>img.mascot{width:clamp(240px,60%,380px);margin:0}}
+.hero__photo>img.mascot{position:absolute;top:auto;left:auto;right:0;bottom:0;width:clamp(170px,46%,220px);height:auto;aspect-ratio:700/754;object-fit:contain;z-index:3;filter:drop-shadow(0 14px 26px rgba(0,0,0,.4))}
 .mascot--float{animation:bob 4.2s ease-in-out infinite}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
-.bubble{position:relative;z-index:4;background:#fff;color:var(--blue-900);border:2.5px solid var(--blue-900);border-radius:20px;padding:10px 14px;box-shadow:var(--sh-lg);max-width:165px;font-size:.76rem;line-height:1.35}
+.bubble{position:absolute;top:10px;right:6px;z-index:4;background:#fff;color:var(--blue-900);border:2.5px solid var(--blue-900);border-radius:20px;padding:10px 14px;box-shadow:var(--sh-lg);max-width:150px;font-size:.76rem;line-height:1.35}
+@media(min-width:560px){
+  .hero__photo{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+  .hero__photo>img.mascot{position:relative;right:auto;bottom:auto;width:clamp(240px,60%,380px)}
+  .bubble{position:relative;top:auto;right:auto;max-width:165px}
+}
 .bubble::before,.bubble::after{content:"";position:absolute;left:50%;width:0;height:0;border-left:13px solid transparent;border-right:13px solid transparent}
 .bubble::before{bottom:-15px;border-top:15px solid var(--blue-900);margin-left:-13px}
 .bubble::after{bottom:-11.5px;border-top:12px solid #fff;margin-left:-10px}
@@ -188,7 +195,7 @@ p{max-width:70ch}
 .about{display:grid;gap:30px;align-items:center}
 @media(min-width:900px){.about{grid-template-columns:.82fr 1.18fr;gap:42px}}
 .about__photo{border-radius:var(--r-lg);overflow:hidden;background:linear-gradient(150deg,var(--blue-700),var(--blue-900));min-height:270px;display:grid;place-items:center;position:relative}
-.about__photo img{width:100%;height:100%;object-fit:cover;object-position:25% center}
+.about__photo img{width:100%;height:100%;object-fit:cover;object-position:70% center}
 .mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,156px),1fr));gap:14px;margin:22px 0}
 .mini li{display:flex;gap:10px;align-items:flex-start}
 .mini svg{width:20px;height:20px;color:var(--red-600);flex:none;margin-top:2px}
