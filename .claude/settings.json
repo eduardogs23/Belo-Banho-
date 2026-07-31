@@ -17,7 +17,13 @@
       "Bash(powershell -c 'Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\('\\\\''C:\\\\Users\\\\Eduardo\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-Eduardo-Desktop-Belo-Banho--Belo-Banho-\\\\b299f7b1-e8c5-44d3-90ed-6a1cb3636c5d\\\\scratchpad\\\\shots\\\\clean-hero.png'\\\\''\\); Write-Output \\($img.Width.ToString\\(\\) + '\\\\''x'\\\\'' + $img.Height.ToString\\(\\)\\); $img.Dispose\\(\\)')",
       "Bash(\"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe\" --headless=old --disable-gpu --user-data-dir=\"C:\\\\Users\\\\Eduardo\\\\AppData\\\\Local\\\\Temp\\\\edge-nocorp\" --window-size=700,1300 --screenshot=\"C:\\\\Users\\\\Eduardo\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-Eduardo-Desktop-Belo-Banho--Belo-Banho-\\\\b299f7b1-e8c5-44d3-90ed-6a1cb3636c5d\\\\scratchpad\\\\shots\\\\nocrop-hero.png\" \"http://localhost:5500\")",
       "Bash(\"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe\" --headless=old --disable-gpu --user-data-dir=\"C:\\\\Users\\\\Eduardo\\\\AppData\\\\Local\\\\Temp\\\\edge-center1\" --window-size=700,700 --screenshot=\"C:\\\\Users\\\\Eduardo\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-Eduardo-Desktop-Belo-Banho--Belo-Banho-\\\\b299f7b1-e8c5-44d3-90ed-6a1cb3636c5d\\\\scratchpad\\\\shots\\\\center-check.png\" \"http://localhost:5500\")",
-      "Bash(\"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe\" --headless=old --disable-gpu --user-data-dir=\"C:\\\\Users\\\\Eduardo\\\\AppData\\\\Local\\\\Temp\\\\edge-center2\" --window-size=420,700 --screenshot=\"C:\\\\Users\\\\Eduardo\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-Eduardo-Desktop-Belo-Banho--Belo-Banho-\\\\b299f7b1-e8c5-44d3-90ed-6a1cb3636c5d\\\\scratchpad\\\\shots\\\\center-check2.png\" \"http://localhost:5500\")"
+      "Bash(\"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe\" --headless=old --disable-gpu --user-data-dir=\"C:\\\\Users\\\\Eduardo\\\\AppData\\\\Local\\\\Temp\\\\edge-center2\" --window-size=420,700 --screenshot=\"C:\\\\Users\\\\Eduardo\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-Eduardo-Desktop-Belo-Banho--Belo-Banho-\\\\b299f7b1-e8c5-44d3-90ed-6a1cb3636c5d\\\\scratchpad\\\\shots\\\\center-check2.png\" \"http://localhost:5500\")",
+      "Bash(git fetch *)",
+      "Bash(curl -s \"https://campo-belo-aquecedores.vercel.app/assets/style.css\")",
+      "Bash(curl -s \"https://campo-belo-aquecedores.vercel.app/assets/style.css\" -o /tmp/live.css -w \"%{http_code}\\\\n\")",
+      "Read(//tmp/**)",
+      "Bash(grep -n \"559px\" /tmp/live.css)",
+      "Bash(sed -n '95,115p' /tmp/live.css)"
     ]
   }
 }
