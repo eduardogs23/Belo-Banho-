@@ -68,6 +68,35 @@
     });
   });
 
+  /* Abas de marcas */
+  var brandTabs = Array.prototype.slice.call(document.querySelectorAll('.brandtabs__tab'));
+  if (brandTabs.length) {
+    var brandPanels = document.querySelectorAll('.brandtabs__panel');
+    var activateBrandTab = function (tab) {
+      brandTabs.forEach(function (t) {
+        var on = t === tab;
+        t.classList.toggle('is-active', on);
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+      });
+      brandPanels.forEach(function (p) { p.hidden = p.id !== tab.getAttribute('aria-controls'); });
+    };
+    brandTabs.forEach(function (tab, i) {
+      tab.addEventListener('click', function () {
+        activateBrandTab(tab);
+        track('marca_selecionada', { marca: tab.textContent.trim() });
+      });
+      tab.addEventListener('keydown', function (e) {
+        var dir = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : e.key === 'Home' ? 'home' : e.key === 'End' ? 'end' : 0;
+        if (!dir) return;
+        e.preventDefault();
+        var next = dir === 'home' ? brandTabs[0] : dir === 'end' ? brandTabs[brandTabs.length - 1] : brandTabs[(i + dir + brandTabs.length) % brandTabs.length];
+        next.focus();
+        activateBrandTab(next);
+      });
+    });
+  }
+
   /* Barra fixa mobile */
   var bar = $('bar'), shown = false;
   if (bar) {

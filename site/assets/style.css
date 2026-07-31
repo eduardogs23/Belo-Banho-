@@ -147,6 +147,23 @@ p{max-width:70ch}
 .brandrow a{font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--blue-800);background:#fff;border:1px solid var(--gray-200);border-radius:var(--r-sm);padding:13px 24px;transition:transform .2s var(--ease),border-color .2s,color .2s,box-shadow .2s}
 .brandrow a:hover{transform:translateY(-3px);border-color:var(--red-500);color:var(--red-600);box-shadow:var(--sh-sm)}
 
+.brandtabs{margin-top:32px}
+.brandtabs__list{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;list-style:none;padding:0;margin:0}
+.brandtabs__tab{font-family:var(--font-display);font-weight:700;font-size:.82rem;color:var(--blue-800);background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--r-full);padding:10px 18px;cursor:pointer;transition:transform .18s var(--ease),border-color .18s,color .18s,background-color .18s,box-shadow .18s}
+.brandtabs__tab:hover{border-color:var(--red-500);color:var(--red-600)}
+.brandtabs__tab.is-active{background:var(--blue-800);border-color:var(--blue-800);color:#fff;box-shadow:var(--sh-md)}
+.brandtabs__tab:focus-visible{outline:3px solid var(--blue-600);outline-offset:2px}
+.brandtabs__panels{margin-top:28px}
+.brandtabs__panel-in{background:var(--blue-50);border-radius:var(--r-lg);padding:clamp(24px,4vw,40px);display:grid;gap:26px}
+@media(min-width:800px){.brandtabs__panel-in{grid-template-columns:1.3fr 1fr;align-items:center}}
+.brandtabs__panel h3{font-size:1.2rem;margin-bottom:10px}
+.brandtabs__panel p{color:var(--gray-500);font-size:var(--fs-sm);margin-bottom:16px;max-width:none}
+.brandtabs__panel ul{display:grid;gap:2px}
+.brandtabs__panel li{display:flex;gap:9px;align-items:flex-start;padding:5px 0;font-size:var(--fs-sm);color:var(--gray-700)}
+.brandtabs__panel .ic-ck{color:var(--success);margin-top:3px}
+.brandtabs__actions{display:flex;flex-direction:column;gap:10px}
+.brandtabs__actions .btn{width:100%}
+
 .proc{display:grid;gap:26px;margin-top:42px;grid-template-columns:1fr;position:relative}
 @media(min-width:768px){.proc{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1100px){.proc{grid-template-columns:repeat(4,1fr);gap:18px}}
