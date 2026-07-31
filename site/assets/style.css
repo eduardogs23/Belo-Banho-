@@ -108,15 +108,20 @@ p{max-width:70ch}
 .hero__cta .btn{flex:1 1 auto;min-width:206px}
 .hero__right{position:relative;display:grid;gap:16px}
 @media(min-width:560px){.hero__right{grid-template-columns:1.3fr .7fr;align-items:stretch}}
-.hero__photo{position:relative;min-height:320px;display:grid;place-items:center}
+.hero__photo{position:relative;min-height:320px;display:flex;flex-direction:column;align-items:flex-end;justify-content:flex-end;gap:10px;padding-right:4px}
 .hero__photo>img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;border-radius:inherit}
 .photo-slot{display:grid;place-items:center;gap:9px;text-align:center;padding:22px;color:rgba(255,255,255,.45);font-size:.72rem;line-height:1.45}
 .photo-slot svg{width:46px;height:46px;opacity:.5}
 .mascot{position:absolute;right:-10px;bottom:-6px;width:clamp(160px,42%,260px);z-index:3;filter:drop-shadow(0 14px 26px rgba(0,0,0,.4))}
-.hero__photo>img.mascot{position:absolute;inset:auto -6px 0 auto;width:clamp(160px,42%,260px);height:auto;aspect-ratio:700/754;object-fit:contain}
+.hero__photo>img.mascot{position:relative;width:clamp(160px,42%,260px);height:auto;aspect-ratio:700/754;object-fit:contain;margin:0 -6px -4px 0;z-index:3;filter:drop-shadow(0 14px 26px rgba(0,0,0,.4))}
+@media(max-width:559px){.hero__photo>img.mascot{width:clamp(210px,58%,260px)}}
+@media(min-width:560px){.hero__photo{justify-content:center;align-items:center;padding-right:0}.hero__photo>img.mascot{width:clamp(240px,60%,380px);margin:0}}
 .mascot--float{animation:bob 4.2s ease-in-out infinite}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
-.bubble{position:absolute;top:14px;left:14px;z-index:4;background:#fff;color:var(--blue-900);border-radius:16px 16px 16px 4px;padding:10px 13px;box-shadow:var(--sh-lg);max-width:165px;font-size:.76rem;line-height:1.35}
+.bubble{position:relative;z-index:4;background:#fff;color:var(--blue-900);border:2.5px solid var(--blue-900);border-radius:20px;padding:10px 14px;box-shadow:var(--sh-lg);max-width:165px;font-size:.76rem;line-height:1.35}
+.bubble::before,.bubble::after{content:"";position:absolute;left:50%;width:0;height:0;border-left:13px solid transparent;border-right:13px solid transparent}
+.bubble::before{bottom:-15px;border-top:15px solid var(--blue-900);margin-left:-13px}
+.bubble::after{bottom:-11.5px;border-top:12px solid #fff;margin-left:-10px}
 .bubble b{display:block;font-family:var(--font-display);font-size:.84rem;margin-bottom:2px}
 .hero__brands{background:linear-gradient(160deg,rgba(255,255,255,.12),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.16);border-radius:var(--r-lg);padding:19px 17px;backdrop-filter:blur(6px)}
 .hero__brands h2{font-size:.72rem;font-weight:700;color:#fff;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px;line-height:1.35}
@@ -183,7 +188,7 @@ p{max-width:70ch}
 .about{display:grid;gap:30px;align-items:center}
 @media(min-width:900px){.about{grid-template-columns:.82fr 1.18fr;gap:42px}}
 .about__photo{border-radius:var(--r-lg);overflow:hidden;background:linear-gradient(150deg,var(--blue-700),var(--blue-900));min-height:270px;display:grid;place-items:center;position:relative}
-.about__photo img{width:100%;height:100%;object-fit:cover}
+.about__photo img{width:100%;height:100%;object-fit:cover;object-position:25% center}
 .mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,156px),1fr));gap:14px;margin:22px 0}
 .mini li{display:flex;gap:10px;align-items:flex-start}
 .mini svg{width:20px;height:20px;color:var(--red-600);flex:none;margin-top:2px}
@@ -204,6 +209,7 @@ p{max-width:70ch}
 .checks span{font-size:var(--fs-xs);color:rgba(255,255,255,.6);line-height:1.5}
 .safety__note{margin-top:20px;padding:17px 19px;border-left:3px solid var(--red-500);background:rgba(255,255,255,.05);border-radius:0 var(--r-sm) var(--r-sm) 0;font-size:var(--fs-sm);color:rgba(255,255,255,.88)}
 .safety__mascot{position:absolute;right:4px;bottom:-12px;width:clamp(84px,15%,180px);height:auto;aspect-ratio:700/830;z-index:1;opacity:.96;pointer-events:none}
+@media(min-width:1024px){.safety__mascot{z-index:3}}
 @media(max-width:899px){.safety{padding-bottom:110px}}
 
 .faq__head{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}

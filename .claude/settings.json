@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(where cursor *)",
+      "Bash(where code *)",
+      "Bash(ls -la \"C:\\\\Users\\\\Eduardo\\\\Desktop\\\\Belo Banho\" 2>&1)",
+      "Read(//c/Users/Eduardo/Desktop/Belo Banho/**)",
+      "Bash(mkdir -p \"c:\\\\Users\\\\Eduardo\\\\Desktop\\\\Belo-Banho-\\\\Belo-Banho-\\\\site\\\\assets\\\\fotos\")",
+      "Bash(cp \"C:\\\\Users\\\\Eduardo\\\\Desktop\\\\Belo Banho\\\\Foto moto.png\" \"c:\\\\Users\\\\Eduardo\\\\Desktop\\\\Belo-Banho-\\\\Belo-Banho-\\\\site\\\\assets\\\\fotos\\\\equipe-veiculo.png\")"
     ]
   }
 }
